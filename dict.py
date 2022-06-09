@@ -51,9 +51,11 @@ while True: ## REPL - Read Execute Program Loop
     elif cmd == "add":
         name = input("  Word: ")
         phone = input("  Translation: ")
+        print(f" Added word {name}  {phone}")
         add_word(conn, name, phone)
     elif cmd == "delete":
         ID = input("  ID: ")
+        print(f" Deleted word {ID}")
         delete_word(conn, ID)
     elif cmd == "help":
         help_list()
